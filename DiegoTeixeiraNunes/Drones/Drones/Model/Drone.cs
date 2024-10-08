@@ -66,11 +66,6 @@ namespace Drones
                 return true;
             }
             return false;
-            void Render(BufferedGraphics drawingSpace)
-            {
-                drawingSpace.Graphics.DrawEllipse(NoflyBrush, new Rectangle(_x - 4, _y - 2, 8, 8));
-                drawingSpace.Graphics.DrawString($"{this}", TextHelpers.drawFont, TextHelpers.writingBrush, _x + 5, _y - 5);
-            }
         }
         public void FreeFlight() 
         {
